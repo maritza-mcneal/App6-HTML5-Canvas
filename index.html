@@ -73,22 +73,27 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
 	<canvas id="myCanvas" width="200" height="100" style="border:3px solid #d35400;">
 	</canvas>
-		
+		</div>
+	
 <script>		
-	<button type="button">Rectangle</button>
+	
+   </script> 
+   <button type="button">Rectangle</button>
 	<button type="button">Name</button>
 	<button type="button">Image</button>
+    <button type="button">Clear</button>
 		
 </script>
 		
 <script>
 	
 	<div id="button" class="w3-container">
-	<a onclick="draw_a();" class="w3-btn w3-black"> Rectangle </a>
-	<a onclick="name_a();" class="w3-btn w3-black"> Name </a>
-	<a onclick="image_a();" class="w3-btn w3-black"> Image </a>
+		<a onclick="draw_a();" class="w3-btn w3-black">Rectangle</a>
+		<a onclick="name_a();" class="w3-btn w3-black">Name</a>
+		<a onclick="image_a();" class="w3-btn w3-black">Image</a>
+        <a onclick="clear_a();" class="w3-btn w3-black">Clear</a>
 	</div>
-	 <script>				    
+	 </script>				    
 
  <script>	
 	function draw_a() {
@@ -96,24 +101,24 @@ console.log("This file last modified " + docMod); // generates message in javaSc
   		var a_context = a_canvas.getContext("2d");
   		a_context.fillRect(50, 25, 150, 100);
 		}
-	 <script>		
+	 </script>		
 <script>
 	function name_a() {
-		var a_canvas = document.getElementById("a")
+  		var a_canvas = document.getElementById("a")
 		var a_context = a_canvas.getContext("2d");
 		a_context.font = "30px Arial";
 		a_context.fillText(Maritza",10,50); 
-		}
-<script>
+        }
+</script>
 
 <script
 	function image_a() {
 	<img id="puppy" src="images/puppy.jpeg" alt="puppy on grass" width="177" height="113">
 		<canvas id="e" width="177" height="113"></canvas>
 		}
-		<script>
+		</script>
 		
-	</script>
+
 
 						    
 	</body>
