@@ -85,8 +85,27 @@ console.log("This file last modified " + docMod); // generates message in javaSc
   		var a_context = a_canvas.getContext("2d");
   		a_context.fillRect(50, 25, 150, 100);
 		}
-	 <script>		    
-</div>						    
+	 <script>		
+<script>
+	var c = document.getElementById("myCanvas");
+		var ctx = c.getContext("2d");
+		ctx.font = "30px Arial";
+		ctx.fillText("    Maritza",10,50);
+</script>
+
+<script>
+	<img id="puppy" src="images/puppy.jpeg" alt="puppy on grass" width="177" height="113">
+		<canvas id="e" width="177" height="113"></canvas>
+		<script>
+		window.onload = function() {
+  		var canvas = document.getElementById("e");
+ 		 var context = canvas.getContext("2d");
+  		var puppy = document.getElementById("cat");
+  		context.drawImage(cat, 0, 0);
+		};
+	</script>
+
+						    
 	</body>
 	</html></p>
 		
