@@ -1,5 +1,3 @@
-<!DOCTYPE html> 
-<html> 
 <!-- The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only.  Any user of this code does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.
  
 THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
@@ -68,32 +66,20 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 </div>
 	
 <div id="content" class="w3-container">
-	<p><html>
-	<body>
-
-	<canvas id="myCanvas" width="200" height="100" style="border:3px solid #d35400;">
-	</canvas>
-		</div>
-	
-<script>		
-	
-   </script> 
-   <button type="button">Rectangle</button>
-	<button type="button">Name</button>
-	<button type="button">Image</button>
-    	<button type="button">Clear</button>
+	<p><canvas id="a" width="200" height="100" style="border:3px solid #d35400;"></canvas></p>
 		
-</script>
-		
-<script>
+      <button onclick = "draw_a()" > Rectangle </button>
+      
+       <button onclick = "name_a()" > Name </button>
+        
+       <button onclick = "image_a()" > Picture </button>
+       
+       <button onclick = "clearRecta()" > Clear </button>
+       
+       
 	
-	<div id="button" class="w3-container">
-		<a onclick="draw_a();" class="w3-btn w3-black">Rectangle</a>
-		<a onclick="name_a();" class="w3-btn w3-black">Name</a>
-		<a onclick="image_a();" class="w3-btn w3-black">Image</a>
-        	<a onclick="clear_a();" class="w3-btn w3-black">Clear</a>
-	</div>
-	 </script>				    
+	
+	 </script>		    
 
  <script>	
 	function draw_a() {
@@ -101,17 +87,17 @@ console.log("This file last modified " + docMod); // generates message in javaSc
   		var a_context = a_canvas.getContext("2d");
   		a_context.fillRect(50, 25, 150, 100);
 		}
-	 </script>		
-<script>
+		 </script>	
+    <script>
+    
 	function name_a() {
   		var a_canvas = document.getElementById("a")
 		var a_context = a_canvas.getContext("2d");
 		a_context.font = "30px Arial";
-		a_context.fillText(Maritza",10,50); 
+		a_context.fillText("Maritza",10,50); 
         }
-</script>
-
-<script
+</script>	
+<script>	
 	function image_a() {
 	<img id="puppy" src="images/puppy.jpeg" alt="puppy on grass" width="177" height="113">
 		<canvas id="e" width="177" height="113"></canvas>
