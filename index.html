@@ -108,13 +108,12 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	
 <script>	
 	function image_a() { <!--calls a function-->
-	var canvas = document.getElementById("e");
+	var canvas = document.getElementById("a");
   	var context = canvas.getContext("2d");
-  	var cat = new Image();
-  	cat.src = "images/cat.png";
-  	cat.onload = function() {
-    	context.drawImage(cat, 0, 0);
-  };
+  	var pup = new Image();
+  	pup.src = "images/puppy.jpeg";
+  	pup.onload = function() {
+    	context.drawImage(pup, 0, 0);
 	}
 </script>
 <script>	
