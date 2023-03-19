@@ -18,7 +18,7 @@ Brief Description of Goal of Code:
 The goal of this code is to have buttons that display different things within the canvas
  
 Known Issues:
-blah, blah, blah, blah
+Currently, the clear button and image button do not work
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
@@ -63,44 +63,46 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
 	<h1>App6---HTML5-Canvas</h1>
+	<!-- header displayed on first page-->
 </div>
 	
 <div id="content" class="w3-container">
 	<p><canvas id="a" width="200" height="100" style="border:3px solid #d35400;"></canvas></p>
-		
-      <button onclick = "draw_a()" > Rectangle </button>
-      
+	<!--code for canvas to apear, also specifies height, with, and color of canvas -->
+     	<button onclick = "draw_a()" > Rectangle </button>
+      	<!-- code for the button that when pressed makes a rectangle appear on the canvas -->
        <button onclick = "name_a()" > Name </button>
-        
+        <!-- code for the button that makes name appear on canvas when pressed-->
        <button onclick = "image_a()" > Picture </button>
-       
+       <!-- code for the button that when pressed makes a picture appear on the canvas-->
        <button onclick = "clearRecta()" > Clear </button>
+	<!-- code that when pressed clears all content in canvas -->
        
        
-	
+
 	
 	 </script>		    
 
  <script>	
-	function draw_a() {
- 		var a_canvas = document.getElementById("a");
-  		var a_context = a_canvas.getContext("2d");
-  		a_context.fillRect(50, 25, 150, 100);
+	function draw_a() { <!-- calls a function -->
+ 		var a_canvas = document.getElementById("a"); <!-- code that finds that canvas-->
+  		var a_context = a_canvas.getContext("2d"); <!-- this code is the drawing context that happens in 2d -->
+  		a_context.fillRect(50, 25, 150, 100); <!-- dimensions of the rectangle that is drawn in the canvas-->
 		}
 		 </script>	
     <script>
     
-	function name_a() {
-  		var a_canvas = document.getElementById("a")
-		var a_context = a_canvas.getContext("2d");
-		a_context.font = "30px Arial";
-		a_context.fillText("Maritza",10,50); 
+	function name_a() { <!-- calls a function-->
+  		var a_canvas = document.getElementById("a")<!-- code that finds the canvas in the domain -->
+		var a_context = a_canvas.getContext("2d"); <!-- drawing context that happens in 2d -->
+		a_context.font = "30px Arial"; <!-- pixels and font of text that is displayed -->
+		a_context.fillText("Maritza",10,50); <!-- text that is to be displayed in the canvas-->
         }
 </script>	
 <script>	
-	function image_a() {
-	<img id="puppy.jpeg" src="puppy.jpeg" alt="puppy on grass" width="177" height="113">
-		<canvas id="a" width="177" height="113"></canvas>
+	function image_a() { <!-- calls a function -->
+	<img id="puppy.jpeg" src="puppy.jpeg" alt="puppy on grass" width="177" height="113"> <!-- find the image and sets it to certain dimensions-->
+		<canvas id="a" width="177" height="113"></canvas> <!-- dimensions of picture to be displayed on canvas -->
 		}
 		</script>
 		
@@ -111,9 +113,9 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	</html></p>
 		
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
- 	
+ 	<!-- above is a disclaimer message that appears on the first page-->
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
-
+	<!-- larger disclaimer that appears under first disclaimer on the page-->
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
 </footer>
