@@ -65,6 +65,13 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	<h1>App6---HTML5-Canvas</h1>
 	<!-- header displayed on first page-->
 </div>
+
+		
+	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+ 	<!-- above is a disclaimer message that appears on the first page-->
+	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+	<!-- larger disclaimer that appears under first disclaimer on the page-->
+<footer class="w3-bottom w3-container w3-flat-carrot">
 	
 <div id="content" class="w3-container">
 	<p><canvas id="a" width="200" height="100" style="border:3px solid #d35400;"></canvas></p>
@@ -75,7 +82,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
         <!-- code for the button that makes name appear on canvas when pressed-->
        <button onclick = "image_a()" > Picture </button>
        <!-- code for the button that when pressed makes a picture appear on the canvas-->
-       <button onclick = "clearRecta()" > Clear </button>
+       <button onclick = "clear_a()" > Clear </button>
 	<!-- code that when pressed clears all content in canvas -->
        
        
@@ -107,25 +114,16 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		</script>
 	<script>	
     function clear_a() {
-	canvas = document.getElementById("a");
-	ctx = canvas.getContext("2d");
-	ctx.clearRect(0, 0, canvas.width, canvas.height);
-	}
-		</script>	
-		
-
-
-						    
+canvas = document.getElementById("a");
+ctx = canvas.getContext("2d");
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
+		</script>				    
 	</body>
 	</html></p>
-		
-	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
- 	<!-- above is a disclaimer message that appears on the first page-->
-	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
-	<!-- larger disclaimer that appears under first disclaimer on the page-->
-<footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
 </footer>
 
 </body>
 </html>
+ 
