@@ -18,23 +18,23 @@ Brief Description of Goal of Code:
 The goal of this code is to have buttons that display different things within the canvas
  
 Known Issues:
-Currently, the clear button and image button do not work
+Currently, the image button does not work
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
 	
    <head> 
-      <title>App6---HTML5-Canvas</title>  
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="apple-mobile-web-app-capable" content="yes">
-      <link rel="stylesheet" href="w3.css">
+      <title>App6---HTML5-Canvas</title>  <!-- title displayed on header -->
+      <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- scale of the header -->
+      <meta name="apple-mobile-web-app-capable" content="yes"> <!-- title header code for mobile website-->
+      <link rel="stylesheet" href="w3.css"> 
       <link rel="stylesheet" href="w3-colors-flat.css">
    </head> 
 
 
 <script>
 var docMod = document.lastModified; // loads last modified time stamp into docMod variable
-alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
+<!--alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line. -->
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 </script>
 
@@ -59,7 +59,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
     z-index: 1;
 }
 </style>
-
+<!-- lines 43-60 are specific dimesnsions and colors to format the page-->
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
 	<h1>App6---HTML5-Canvas</h1>
@@ -91,38 +91,38 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
  <script>	
 	function draw_a() { <!-- calls a function -->
- 		var a_canvas = document.getElementById("a"); <!-- code that finds that canvas-->
-  		var a_context = a_canvas.getContext("2d"); <!-- this code is the drawing context that happens in 2d -->
-  		a_context.fillRect(50, 25, 150, 100); <!-- dimensions of the rectangle that is drawn in the canvas-->
-		}
+ 	var a_canvas = document.getElementById("a"); <!-- code that finds that canvas-->
+  	var a_context = a_canvas.getContext("2d"); <!-- this code is the drawing context that happens in 2d -->
+  	a_context.fillRect(50, 25, 150, 100); <!-- dimensions of the rectangle that is drawn in the canvas-->
+	}
 		 </script>	
     <script>
     
 	function name_a() { <!-- calls a function-->
-  		var a_canvas = document.getElementById("a")<!-- code that finds the canvas in the domain -->
-		var a_context = a_canvas.getContext("2d"); <!-- drawing context that happens in 2d -->
-		a_context.font = "30px Arial"; <!-- pixels and font of text that is displayed -->
-		a_context.fillText("Maritza",10,50); <!-- text that is to be displayed in the canvas-->
+  	var a_canvas = document.getElementById("a")<!-- code that finds the canvas in the domain -->
+	var a_context = a_canvas.getContext("2d"); <!-- drawing context that happens in 2d -->
+	a_context.font = "30px Arial"; <!-- pixels and font of text that is displayed -->
+	a_context.fillText("Maritza",10,50); <!-- text that is to be displayed in the canvas-->
         }
 </script>	
+	
 <script>	
 	function image_a() { <!--calls a function-->
-		var a_canvas = document.getElementById("a") <!-- code that finds canvas in the domain -->
-		var a_context = a_canvas.getContext("2d"); <!-- drawing context that happens in 2d-->
-  		base_image = new Image(); <!-- the background/base will be an image -->
-  		base_image.src = 'puppy.jpeg'; <!-- image to be used is puppy.jpeg -->
-  		context.drawImage(base_image, 200, 100); <!-- dimensions of image -->
-		}
-		}
-		</script>
-	<script>	
-    function clear_a() { <!-- calls a function-->
-		canvas = document.getElementById("a"); <!-- finds canvas in the code -->
-		ctx = canvas.getContext("2d"); <!-- saying that the context within the canvas happens in 2d-->
-		ctx.clearRect(0, 0, canvas.width, canvas.height); <!-- dimensions of what will be cleared -->
-		}
-		</script>	
-		<footer class="w3-bottom w3-container w3-flat-carrot">
+	var a_canvas = document.getElementById("a") <!-- code that finds canvas in the domain -->
+	var a_context = a_canvas.getContext("2d"); <!-- drawing context that happens in 2d-->
+  	base_image = new Image(); <!-- the background/base will be an image -->
+  	base_image.src = 'puppy.jpeg'; <!-- image to be used is puppy.jpeg -->
+  	context.drawImage(base_image, 200, 100); <!-- dimensions of image -->
+	}
+</script>
+<script>	
+    	function clear_a() { <!-- calls a function-->
+	canvas = document.getElementById("a"); <!-- finds canvas in the code -->
+	ctx = canvas.getContext("2d"); <!-- saying that the context within the canvas happens in 2d-->
+	ctx.clearRect(0, 0, canvas.width, canvas.height); <!-- dimensions of what will be cleared -->
+	}
+</script>	
+	<footer class="w3-bottom w3-container w3-flat-carrot">
 	</body>
 	</html></p>
 	<p>DIY!</p>
