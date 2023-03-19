@@ -107,8 +107,9 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 </script>	
 <script>	
 	function image_a() { <!-- calls a function -->
-	<img id="puppy.jpeg" src="puppy.jpeg" alt="puppy on grass" width="177" height="113"> <!-- find the image and sets it to certain dimensions-->
-		<canvas id="a" width="177" height="113"></canvas> <!-- dimensions of picture to be displayed on canvas -->
+		canvas = document.getElementById("a");
+		ctx = canvas.getContext("2d");
+		<img src="puppy.jpeg" alt="picture of puppy on grass" width="200" height="100"> </p>
 		}
 		</script>
 	<script>	
