@@ -113,11 +113,11 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		}
 		</script>
 	<script>	
-    function clear_a() {
-canvas = document.getElementById("a");
-ctx = canvas.getContext("2d");
-ctx.clearRect(0, 0, canvas.width, canvas.height);
-}
+    function clear_a() { <!-- calls a function-->
+		canvas = document.getElementById("a"); <!-- finds canvas in the code -->
+		ctx = canvas.getContext("2d"); <!-- saying that the context within the canvas happens in 2d-->
+		ctx.clearRect(0, 0, canvas.width, canvas.height); <!-- dimensions of what will be cleared -->
+		}
 		</script>				    
 	</body>
 	</html></p>
