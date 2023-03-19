@@ -106,10 +106,12 @@ console.log("This file last modified " + docMod); // generates message in javaSc
         }
 </script>	
 <script>	
-	function image_a() {
-  		base_image = new Image();
-  		base_image.src = 'puppy.jpeg';
-  		context.drawImage(base_image, 200, 100);
+	function image_a() { <!--calls a function-->
+		var a_canvas = document.getElementById("a") <!-- code that finds canvas in the domain -->
+		var a_context = a_canvas.getContext("2d"); <!-- drawing context that happens in 2d-->
+  		base_image = new Image(); <!-- the background/base will be an image -->
+  		base_image.src = 'puppy.jpeg'; <!-- image to be used is puppy.jpeg -->
+  		context.drawImage(base_image, 200, 100); <!-- dimensions of image -->
 		}
 		}
 		</script>
