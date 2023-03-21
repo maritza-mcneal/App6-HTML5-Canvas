@@ -73,20 +73,22 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	<!-- larger disclaimer that appears under first disclaimer on the page-->
 	
 <div id="content" class="w3-container">
-	<p><canvas id="a" width="200" height="100" style="border:3px solid #d35400;"></canvas></p>
-	<!--code for canvas to apear, also specifies height, with, and color of canvas -->
-     	<button onclick = "draw_a()" > Rectangle </button>
-      	<!-- code for the button that when pressed makes a rectangle appear on the canvas -->
+       <p><canvas id="a" width="200" height="100" style="border:3px solid #d35400;"></canvas></p>
+       <!--code for canvas to apear, also specifies height, with, and color of canvas -->
+       <button onclick = "draw_a()" > Rectangle </button>
+       <!-- code for the button that when pressed makes a rectangle appear on the canvas -->
        <button onclick = "name_a()" > Name </button>
-        <!-- code for the button that makes name appear on canvas when pressed-->
+       <!-- code for the button that makes name appear on canvas when pressed-->
        <button onclick = "image_a()" > Picture </button>
        <!-- code for the button that when pressed makes a picture appear on the canvas-->
        <button onclick = "clear_a()" > Clear </button>
-	<!-- code that when pressed clears all content in canvas -->
-       
-       
+       <!-- code that when pressed clears all content in canvas -->
+       <p>Image to use:</p> 
+       <img id="puppy.jpeg" src="puppyj.peg"
+       <!-- image that will appear on the canvas -->
+	     
 
-	
+	   
 </script>		    
 
  <script>	
@@ -108,10 +110,10 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	
 <script>	
 	function image_a() { <!--calls a function-->
-		var a_canvas = document.getElementById("a");
-		var b_context = b_canvas.getContext("2d");
-		var img = document.getElementById("puppy.jpeg");
-		a_context.drawImage(img,10,20);
+		var a_canvas = document.getElementById("a");  <!-- code that finds the canvas in the domain -->
+		var b_context = b_canvas.getContext("2d"); <!-- drawing context that happens in 2d -->
+		var img = document.getElementById("puppy.jpeg"); <!-- what document to use -->
+		a_context.drawImage(img,10,20); <!-- image dimensions-->
 	}
 </script>
 <script>	
