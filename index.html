@@ -87,41 +87,39 @@ console.log("This file last modified " + docMod); // generates message in javaSc
        
 
 	
-	 </script>		    
+</script>		    
 
  <script>	
 	function draw_a() { <!-- calls a function -->
- 	var a_canvas = document.getElementById("a"); <!-- code that finds that canvas-->
-  	var a_context = a_canvas.getContext("2d"); <!-- this code is the drawing context that happens in 2d -->
-  	a_context.fillRect(50, 25, 150, 100); <!-- dimensions of the rectangle that is drawn in the canvas-->
-	}
-		 </script>	
-    <script>
+ 		var a_canvas = document.getElementById("a"); <!-- code that finds that canvas-->
+  		var a_context = a_canvas.getContext("2d"); <!-- this code is the drawing context that happens in 2d -->
+  		a_context.fillRect(50, 25, 150, 100); <!-- dimensions of the rectangle that is drawn in the canvas-->
+		}
+</script>	
+<script>
     
 	function name_a() { <!-- calls a function-->
-  	var a_canvas = document.getElementById("a")<!-- code that finds the canvas in the domain -->
-	var a_context = a_canvas.getContext("2d"); <!-- drawing context that happens in 2d -->
-	a_context.font = "30px Arial"; <!-- pixels and font of text that is displayed -->
-	a_context.fillText("Maritza",10,50); <!-- text that is to be displayed in the canvas-->
-        }
+  		var a_canvas = document.getElementById("a")<!-- code that finds the canvas in the domain -->
+		var a_context = a_canvas.getContext("2d"); <!-- drawing context that happens in 2d -->
+		a_context.font = "30px Arial"; <!-- pixels and font of text that is displayed -->
+		a_context.fillText("Maritza",10,50); <!-- text that is to be displayed in the canvas-->
+       		 }
 </script>	
 	
 <script>	
 	function image_a() { <!--calls a function-->
-	var canvas = document.getElementById("a");
-  	var context = canvas.getContext("2d");
-  	var pup = new Image();
-  	pup.src = "images/puppy.jpeg";
-  	pup.onload = function() {
-    	context.drawImage(pup, 0, 0);
+		var a_canvas = document.getElementById("a");
+		var b_context = b_canvas.getContext("2d");
+		var img = document.getElementById("puppy.jpeg");
+		a_context.drawImage(img,10,20);
 	}
 </script>
 <script>	
     	function clear_a() { <!-- calls a function-->
-	canvas = document.getElementById("a"); <!-- finds canvas in the code -->
-	ctx = canvas.getContext("2d"); <!-- saying that the context within the canvas happens in 2d-->
-	ctx.clearRect(0, 0, canvas.width, canvas.height); <!-- dimensions of what will be cleared -->
-	}
+		canvas = document.getElementById("a"); <!-- finds canvas in the code -->
+		ctx = canvas.getContext("2d"); <!-- saying that the context within the canvas happens in 2d-->
+		ctx.clearRect(0, 0, canvas.width, canvas.height); <!-- dimensions of what will be cleared -->
+		}
 </script>	
 	<footer class="w3-bottom w3-container w3-flat-carrot">
 	</body>
