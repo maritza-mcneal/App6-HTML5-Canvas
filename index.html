@@ -79,13 +79,11 @@ console.log("This file last modified " + docMod); // generates message in javaSc
        <!-- code for the button that when pressed makes a rectangle appear on the canvas -->
        <button onclick = "name_a()" > Name </button>
        <!-- code for the button that makes name appear on canvas when pressed-->
-       <button onclick = "image_a()" > Picture </button>
+       <p button onclick="drawImage(); return false">Click to draw image</p>
        <!-- code for the button that when pressed makes a picture appear on the canvas-->
        <button onclick = "clear_a()" > Clear </button>
        <!-- code that when pressed clears all content in canvas -->
-      <!-- <p>Image to use:</p> 
-       <img id="puppy.jpeg" src="puppyj.peg" -->
-       <!-- image that will appear on the canvas -->
+     
 	     
 
 	   
@@ -110,11 +108,15 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	
 <script>	
 	function image_a() { <!--calls a function-->
-		var a_canvas = document.getElementById("a");  <!-- code that finds the canvas in the domain -->
-		var b_context = b_canvas.getContext("2d"); <!-- drawing context that happens in 2d -->
-		var img = document.getElementById("puppy.jpeg"); <!-- what document to use -->
-		a_context.drawImage(img,10,20); <!-- image dimensions-->
-	}
+		var drawImage=document.getElementById("myCanvas")
+		var context=drawImage.getContext("2d");
+		var elephant=new Image();
+		elephant.src=https://clipartix.com/wp-content/uploads/2018/03/elephant-outline-2018-43.png"; 
+		elephant.onload=function() {
+			context.drawimage(elephant, 200, 150, 56, 56);
+		}
+	
+	
 </script>
 <script>	
     	function clear_a() { <!-- calls a function-->
