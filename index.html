@@ -79,7 +79,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
        <!-- code for the button that when pressed makes a rectangle appear on the canvas -->
        <button onclick = "name_a()" > Name </button>
        <!-- code for the button that makes name appear on canvas when pressed-->
-       <p button onclick="drawImage(); return false">Click to draw image</p>
+       <button onclick="drawImage()">Click to draw image</p>
        <!-- code for the button that when pressed makes a picture appear on the canvas-->
        <button onclick = "clear_a()" > Clear </button>
        <!-- code that when pressed clears all content in canvas -->
@@ -107,7 +107,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 </script>	
 	
 <script>	
-	function image_a() { <!--calls a function-->
+	function drawImage() { <!--calls a function-->
 		var drawImage=document.getElementById("myCanvas")
 		var context=drawImage.getContext("2d");
 		var elephant=new Image();
