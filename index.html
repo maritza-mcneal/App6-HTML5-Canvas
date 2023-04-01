@@ -79,12 +79,20 @@ console.log("This file last modified " + docMod); // generates message in javaSc
        <!-- code for the button that when pressed makes a rectangle appear on the canvas -->
        <button onclick = "name_a()" > Name </button>
        <!-- code for the button that makes name appear on canvas when pressed-->
-       <button onclick="drawImage()">Image</p>
+       <button onclick="image_a()">Image</p>
        <!-- code for the button that when pressed makes a picture appear on the canvas-->
        <button onclick = "clear_a()" > Clear </button>
        <!-- code that when pressed clears all content in canvas -->
      
-	     
+	</div>
+	<div class="page" id="two">
+		<div id="header" class="w3-container w3-flat-carrot">
+			<h1>Image</h1>
+		</div>
+		<img id="dog"
+		src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/6007/dog-clipart-md.png"
+		alt="Pixel dog" width="150" height="150">
+	</div>	
 
 	   
 </script>		    
@@ -107,15 +115,12 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 </script>	
 	
 <script>	
-	function drawImage() { <!--calls a function-->
-		var drawImage=document.getElementById("a");
-		var context=drawImage.getContext("2d");
-		var elephant=new Image();
-		elephant.src=https://clipartix.com/wp-content/uploads/2018/03/elephant-outline-2018-43.png"; 
-		elephant.onload=function() 
-			context.drawimage(elephant, 200, 150, 56, 56);
+	function image_a() { <!--calls a function-->
+		var a_canvas = document.getElementById("a");
+		var a_context = a_canvas.getContext("2d");
+		var img = document.getElementById("dog")
+		a_context.drawImage(img,10,10);
 		}
-	
 	
 </script>
 <script>	
