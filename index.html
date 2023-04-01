@@ -84,7 +84,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
        <button onclick = "clear_a()" > Clear </button>
        <!-- code that when pressed clears all content in canvas -->
      
-	</div>
+	</div> <!--new page for image code, contains image link, id, and pixels -->
 	<div class="page" id="two">
 		<div id="header" class="w3-container w3-flat-carrot">
 			<h1>Image</h1>
@@ -116,10 +116,10 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	
 <script>	
 	function image_a() { <!--calls a function-->
-		var a_canvas = document.getElementById("a");
-		var a_context = a_canvas.getContext("2d");
-		var img = document.getElementById("dog")
-		a_context.drawImage(img,10,10);
+		var a_canvas = document.getElementById("a"); <!-- code that finds the canvas in the domain -->
+		var a_context = a_canvas.getContext("2d"); <!-- context that happens in 2d -->
+		var img = document.getElementById("dog") <!-- finds the image by its id" -->
+		a_context.drawImage(img,10,10); 
 		}
 	
 </script>
